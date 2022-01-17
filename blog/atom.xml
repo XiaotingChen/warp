@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://broadinstitute.github.io/warp/blog</id>
+    <title>WARP Blog</title>
+    <updated>2021-11-09T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://broadinstitute.github.io/warp/blog"/>
+    <subtitle>WARP Blog</subtitle>
+    <icon>https://broadinstitute.github.io/warp/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[WARP Whole Genome and Exome Pipelines Produce Reblocked GVCFs]]></title>
+        <id>Nov21_ReblockedGVCF</id>
+        <link href="https://broadinstitute.github.io/warp/blog/Nov21_ReblockedGVCF"/>
+        <updated>2021-11-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[November 9, 2021]]></summary>
+        <author>
+            <name>Liz Kiernan</name>
+        </author>
+    </entry>
+</feed>
