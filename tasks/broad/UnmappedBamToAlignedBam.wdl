@@ -50,9 +50,9 @@ workflow UnmappedBamToAlignedBam {
     Boolean allow_empty_ref_alt = false
   }
 
-  Float cutoff_for_large_rg_in_gb = 20.0
+  Float cutoff_for_large_rg_in_gb = 180.0
 
-  String bwa_commandline = "bwa mem -K 100000000 -p -v 3 -t 16 -Y $bash_ref_fasta"
+  String bwa_commandline = "bwa mem -K 30000000 -p -v 3 -t 16 -Y $bash_ref_fasta"
 
   Int compression_level = 2
 
