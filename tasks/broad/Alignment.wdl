@@ -113,7 +113,13 @@ task SamToFastqAndBwaMemAndMba {
     fi
   >>>
   runtime {
-    docker: "us.gcr.io/broad-gotc-prod/samtools-picard-bwa:1.0.0-0.7.15-2.23.8-1626449438"
+    # this image might have some problems and resulting in the OOM behavior, let's see if swapping
+    # to latest version can solve it.
+    #
+    # docker: "us.gcr.io/broad-gotc-prod/samtools-picard-bwa:1.0.0-0.7.15-2.23.8-1626449438"
+
+    # latest from us.gcr.io/broad-gotc-prod/samtools-picard-bwa@sha256:68eae459869592a095b75598039a65e02dede4f6e89cb1452a6a9e673cc10fa9
+    docker: "us.gcr.io/broad-gotc-prod/samtools-picard-bwa:1.0.2-0.7.15-2.26.10-1643840748"
     preemptible: preemptible_tries
     memory: "226 GiB"
     cpu: "16"
